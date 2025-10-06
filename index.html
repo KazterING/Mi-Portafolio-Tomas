@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Preload Important resources -->
     <link rel="preload" href="assets/css/aos.css" as="style" >
@@ -108,7 +109,9 @@
                     <div class="social-icons pb-2 pt-2 mb-2">
                         <a href="https://github.com/KazterING/" target="_blank" class="github" data-aos="fade-up" data-aos-delay="620"><i class="bi bi-github"></i></a>
                         <a href="https://www.instagram.com/el_tomassss/" target="_blank" class="instagram" data-aos="fade-up" data-aos-delay="660"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.link/" target="_blank" class="linkedin" data-aos="fade-up" data-aos-delay="690"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tomas-saldaña/" target="_blank" class="linkedin" data-aos="fade-up" data-aos-delay="690"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:tomas.ingenieriaindustrial@gmail.com" target="_blank" class="email" data-aos="fade-up" data-aos-delay="700"><i class="bi bi-envelope"></i></a>
+                        <a href="https://wa.me/56979145478" target="_blank" class="whatsapp" data-aos="fade-up" data-aos-delay="720"><i class="bi bi-whatsapp"></i></a>
                     </div>
                     <div class="d-flex call-to-action">
                         <a href="#contact" data-aos="fade-up" data-aos-delay="700"><button type="button" class="btn me-4 primary-bg-btn"><i class="bi bi-envelope"></i> Contactame</button></a>
@@ -678,7 +681,7 @@
     <script src="assets/js/owl.carousel.min.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/script.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 
@@ -698,7 +701,18 @@
         })
         .then(res => res.json())
         .then(data => {
-            alert(data.message);
+            Swal.fire({
+                icon: 'success',
+                title: '¡Mensaje enviado!',
+                text: data.message,
+                confirmButtonColor: '#6f42c1', // Puedes personalizar el color
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            });
             form.reset();
         })
         .catch(() => alert('Error al enviar el mensaje.'));
