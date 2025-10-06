@@ -599,7 +599,7 @@
     </section> -->
 
     <!-- Contact -->
-    <!-- <section id="contact">
+    <section id="contact">
         <div class="container">
             <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">¿Que sigue?</span></h6>
             <h2 class="section-heading text-center">¡Pongamosnos en contacto!</h2>
@@ -607,7 +607,7 @@
             <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/xldjelqg" method="POST">
+                        <form id="contact-form" onsubmit="sendMail(event)">
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -638,12 +638,29 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
-            <p class="text-center copyright-text">Made with <span>Bootstrap, HTML, CSS, JS</p>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center mb-2 mb-md-0">
+                    <span>
+                        <i class="bi bi-envelope"></i> 
+                        <a href="mailto:tomas.ingenieriaindustrial@gmail.com" class="text-decoration-none text-light">tomas.ingenieriaindustrial@gmail.com</a>
+                    </span>
+                    <span class="mx-3">|</span>
+                    <span>
+                        <i class="bi bi-whatsapp"></i>
+                        <a href="https://wa.me/56979145478" target="_blank" class="text-decoration-none text-light">+56 9 7914 5478</a>
+                    </span>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p class="mb-0 copyright-text">
+                        Echo con <span>Bootstrap, HTML, CSS, JS</span>
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -661,6 +678,32 @@
     <script src="assets/js/owl.carousel.min.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/script.js" defer></script>
+
+
+
+
+    <script>
+    function sendMail(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form');
+        fetch('https://backend-portafolio-six.vercel.app/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: form.name.value,
+                email: form.email.value,
+                subject: form.subject.value,
+                message: form.message.value
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            alert(data.message);
+            form.reset();
+        })
+        .catch(() => alert('Error al enviar el mensaje.'));
+    }
+    </script>
 
 </body>
 </html>

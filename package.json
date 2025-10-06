@@ -1,0 +1,26 @@
+{
+  "name": "my-portfolio-main",
+  "version": "1.0.0",
+  "description": "> See live demo: [https://vijay-singh.com](https://vijay-singh.com)    |  Feel free to use but **credit appreciated** and a **⭐** to repo ;)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazterING/Mi-Portafolio-Tomas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KazterING/Mi-Portafolio-Tomas/issues"
+  },
+  "homepage": "https://github.com/KazterING/Mi-Portafolio-Tomas#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.7",
+    "pg": "^8.16.3"
+  }
+}
