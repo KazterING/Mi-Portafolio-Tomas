@@ -200,12 +200,11 @@
 
     <script>
     const images = [
-        'photos/bella.jpg',
+        'photos/foto5.jpg',
         'photos/foto1.jpg',
         'photos/foto2.jpg',
         'photos/foto3.jpg',
         'photos/foto4.jpg',
-        'photos/foto5.jpg',
         'photos/foto6.jpg',
         'photos/foto7.jpg',
         'photos/foto8.jpg',
@@ -214,6 +213,19 @@
     let current = 0;
     const imgCurrent = document.getElementById('about-slideshow');
     const imgNext = document.getElementById('about-slideshow-next');
+
+    // Función para inicializar el slideshow
+    function initializeSlideshow() {
+        // Asegurar que la imagen actual esté visible desde el inicio
+        imgCurrent.src = images[current];
+        imgCurrent.style.transform = "translateX(0)";
+        imgCurrent.style.opacity = "1";
+        
+        // Preparar la imagen siguiente (oculta)
+        imgNext.src = images[(current + 1) % images.length];
+        imgNext.style.transform = "translateX(100%)";
+        imgNext.style.opacity = "0";
+    }
 
     function slideToNextImage() {
         imgNext.src = images[(current + 1) % images.length];
@@ -232,7 +244,11 @@
         }, 2000); // 2 segundos de transición
     }
 
-    setInterval(slideToNextImage, 8000); // Cambia cada 8 segundos
+    // Inicializar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeSlideshow();
+        setInterval(slideToNextImage, 8000); // Cambia cada 8 segundos
+    });
     </script>
 
     <!-- Skills -->
