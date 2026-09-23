@@ -1,862 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Tomás Saldaña - Ingeniero Civil Industrial</title>
-
-    <meta name="title" content="Vijay Singh - Frontend Web Developer">
-    <meta name="description" content="Vijay Singh - Passionate Frontend Web Developer creating beautiful and responsive websites. Explore my portfolio and blog for tech insights.">
-    <meta name="keywords" content="Vijay Singh, Web Developer, Frontend Developer, Portfolio, Blog, Tech Insights">
-    <meta name="author" content="Vijay Singh">
-
-    <!-- Open Graph Meta Tags / Facebook -->
-    <meta property="og:title" content="Vijay Singh - Frontend Web Developer">
-    <meta property="og:description" content="Passionate about crafting beautiful and responsive websites. Explore my portfolio and blog for tech insights.">
-    <meta property="og:image" content="assets/images/banner.webp">
-    <meta property="og:url" content="/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vijay Singh - Frontend Web Developer">
-    <meta name="twitter:description" content="Passionate about crafting beautiful and responsive websites. Explore my portfolio and blog for tech insights.">
-    <meta name="twitter:image" content="assets/images/banner.webp">
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/bellaslogoNO.png" type="image/x-icon">
-
-    <!-- Google Fonts: Rubik -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- Preload Important resources -->
-    <link rel="preload" href="assets/css/aos.css" as="style" >
-    <link rel="preload" href="assets/css/owl.carousel.min.css" as="style" >
-    <link rel="preload" href="assets/css/bootstrap.min.css" as="style" />
-    <link rel="preload" href="assets/css/bootstrap-icons.min.css" as="style" />
-    <link rel="preload" href="assets/css/style.css" as="style" />
-
-    <!-- MS-Clarity Analytics -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "phycesbqlg");
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c28">
+  <title>Tomás Saldaña — Ingeniería, datos y decisiones</title>
+  <meta name="description" content="Portafolio de Tomás Saldaña. Ingeniería Civil Industrial, análisis de datos, Power BI y automatización. Conoce mis proyectos aplicados en San Fernando, Chile.">
+  <meta name="author" content="Tomás Saldaña">
+  <meta property="og:title" content="Tomás Saldaña — Ingeniería, datos y decisiones">
+  <meta property="og:description" content="Conecto datos, procesos y tecnología para resolver problemas reales. Explora mis proyectos y conversemos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:image" content="assets/images/portrait.webp">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tomás Saldaña — Ingeniería, datos y decisiones">
+  <meta name="twitter:description" content="Análisis de datos, visualización y optimización de procesos. Portafolio profesional de Tomás Saldaña.">
+  <meta name="twitter:image" content="assets/images/portrait.webp">
+  <link rel="icon" href="assets/images/favicon-ts.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <script src="assets/js/portfolio.js" defer></script>
 </head>
-
-<body data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#navbar">
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-    
-    <!-- Header -->
-    <header id="header">
-        <nav id="navbar" class="navbar navbar-expand-md">
-            <div class="container">
-                <a href="/" class="navbar-brand logo">
-                    <img src="assets/images/bellaslogo.png" alt="Logo" class="logo-name" style="height:64px;vertical-align:middle;">
-                </a>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarMenu">
-                    <div class="offcanvas-header">
-                        <a href="/" class="offcanvas-title navbar-brand logo" id="offcanvasNavbarMenu" data-aos="fade-down" data-aos-delay="600">
-                            <img src="assets/images/bellaslogo.png" alt="Logo" class="logo-name" style="height:64px;vertical-align:middle;">
-                        </a>
-                        <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close Navigation Menu"><i class="bi bi-x toggle-icon"></i></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav nav-underline justify-content-end flex-grow-1">
-                            <li class="nav-item" data-aos="fade-down" data-aos-delay="500" data-bs-dismiss="offcanvas"><a href="#hero" class="nav-link active" aria-current="page">Inicio</a></li>
-                            <li class="nav-item" data-aos="fade-down" data-aos-delay="600" data-bs-dismiss="offcanvas"><a href="#about" class="nav-link">Sobre mí</a></li>
-                            <li class="nav-item" data-aos="fade-down" data-aos-delay="700" data-bs-dismiss="offcanvas" ><a href="#skills" class="nav-link">Habilidades</a></li>
-                            <li class="nav-item" data-aos="fade-down" data-aos-delay="800" data-bs-dismiss="offcanvas"><a href="#projects" class="nav-link">Proyectos</a></li>
-                            <li class="nav-item" data-aos="fade-down" data-aos-delay="1000" data-bs-dismiss="offcanvas"><a href="#contact" class="nav-link">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="btn border-0" id="switchTheme" data-aos="fade-down" data-aos-delay="600"><i class="bi bi-brightness-high-fill"></i></button>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation Menu" data-aos="fade-down" data-aos-delay="600"><i class="bi bi-list toggle-icon"></i></button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero -->
-    <section id="hero">
-        <div class="container">     
-            <div class="row about-content">
-                <div class="col-lg-5 order-lg-2">
-                    <div class="hero-portrait">
-                        <div class="pic" data-aos="fade-up" data-aos-delay="600"></div>
-                    </div>
-                </div>
-                <div class="col-lg-7 order-lg-1 hero-content">
-                    <span class="h3" data-aos="fade-up" data-aos-delay="0">“The goal is to turn data into information and information into insight.”</span>
-                    <h1 class="name" data-aos="fade-up" data-aos-delay="200"><span>- Carly Fiorina</h1>
-                    <button type="button" class="btn btn-sm mt-3 mb-3 btn-showcase"  data-aos="fade-up" data-aos-delay="400"><i class="bi bi-stars"></i> Ingeniero Civil Industrial</button>
-                    <p class="tagline mb-3" data-aos="fade-up" data-aos-delay="600">Soy titulado en Ciencias de la Ingeniería con mención en <span class="underline">Análisis de Datos</span>, con un perfil proactivo y orientado a resultados. Me especializo en la resolución de problemas mediante enfoques tecnológicos, aplicando conocimientos sólidos en análisis de datos, automatización de procesos y <span class="underline">optimización operativa</span>. Manejo herramientas como Python, JavaScript y plataformas de visualización y modelado. Comprometido con el aprendizaje continuo, busco aportar al desarrollo eficiente de proyectos y equipos mediante soluciones innovadoras y basadas en datos.</p>
-                    <div class="social-icons pb-2 pt-2 mb-2">
-                        <a href="https://github.com/KazterING/" target="_blank" class="github" data-aos="fade-up" data-aos-delay="620"><i class="bi bi-github"></i></a>
-                        <a href="https://www.instagram.com/el_tomassss/" target="_blank" class="instagram" data-aos="fade-up" data-aos-delay="660"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/tomas-saldaña/" target="_blank" class="linkedin" data-aos="fade-up" data-aos-delay="690"><i class="bi bi-linkedin"></i></a>
-                        <a href="mailto:tomas.ingenieriaindustrial@gmail.com" target="_blank" class="email" data-aos="fade-up" data-aos-delay="700"><i class="bi bi-envelope"></i></a>
-                        <a href="https://wa.me/56979145478" target="_blank" class="whatsapp" data-aos="fade-up" data-aos-delay="720"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                    <div class="d-flex call-to-action">
-                        <a href="#contact" data-aos="fade-up" data-aos-delay="700"><button type="button" class="btn me-4 primary-bg-btn"><i class="bi bi-envelope"></i> Contactame</button></a>
-                        <a href="#projects" data-aos="fade-up" data-aos-delay="800"><button type="button" class="btn btn-light secondary-bg-btn">¡Alguno de mis trabajos! <i class="bi bi-arrow-up-right-circle"></i></button></a>
-                    </div>                    
-                </div>
-            </div>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#inicio" aria-label="Tomás Saldaña, inicio">ts<span>©</span></a>
+      <nav id="navigation" aria-label="Navegación principal">
+        <a href="#projects">Proyectos</a><a href="#about">Sobre mí</a><a href="#skills">Especialidades</a><a class="nav-contact" href="#contact">Conversemos <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> INGENIERÍA CIVIL INDUSTRIAL · CHILE</p>
+          <h1 id="hero-title">Tomás<br>Saldaña<span class="lime">.</span></h1>
+          <p class="hero-statement">De los datos a las<br><em>mejores decisiones.</em></p>
+          <p class="hero-description">Conecto análisis de datos, procesos y tecnología para resolver problemas reales y encontrar oportunidades de mejora.</p>
+          <div class="hero-actions"><a class="button button-lime" href="#projects">Explorar proyectos <span aria-hidden="true">↗</span></a><a class="text-link" href="#contact">Hablemos <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-social"><a href="https://www.linkedin.com/in/tomas-saldaña/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/KazterING/" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>San Fernando, Chile</span></div>
         </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-grid" aria-hidden="true"></div>
+            <span class="frame-label">DATOS + CRITERIO + ACCIÓN</span>
+            <span class="portrait-orbit" aria-hidden="true"></span>
+            <span class="portrait-letter" aria-hidden="true">ts.</span>
+            <img class="portrait" src="assets/images/portrait.webp" width="612" height="409" alt="Tomás Saldaña, con chaqueta y camisa blanca" fetchpriority="high">
+            <div class="portrait-caption"><span>Una mirada analítica.<br>Un enfoque humano.</span><span class="caption-arrow" aria-hidden="true">↗</span></div>
+          </div>
+          <div class="visual-note"><span class="note-cross" aria-hidden="true">✳</span><span>Entender el problema.<br><strong>Construir la solución.</strong></span><span class="note-index">DATOS → ACCIÓN</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>ANÁLISIS CON PROPÓSITO</span><div>Python <i>·</i> Power BI <i>·</i> RStudio <i>·</i> Excel</div><a href="#projects" aria-label="Bajar a proyectos">SIGUE EXPLORANDO <span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <!-- Things I Love -->
-    <section id="things-i-love">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Intereses</span></h6>
-            <h2 class="section-heading text-center">Cosas que me apasionan</h2>
-            <div class="row justify-content-center pt-3 gy-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
-                    <div class="card">
-                        <div class="circle-container">
-                            <div class="circle"><i class="bi bi-bar-chart-line"></i></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">Análisis de datos y toma de decisiones basadas en datos</p>
-                            <p class="card-text">Convertir datos en información y la información en conocimiento” es más que una frase: es el corazón de una estrategia efectiva. En este ámbito, recojo, proceso y analizo datos cuantitativos y cualitativos con el fin de extraer insights accionables. A partir de esos insights, diseño dashboards, segmentaciones, modelos predictivos o análisis exploratorios que permitan respaldar decisiones con evidencia, reducir incertidumbre y maximizar el impacto en objetivos concretos (crecimiento, eficiencia, experiencia del usuario…).</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
-                    <div class="card">
-                        <div class="circle-container">
-                            <div class="circle"><i class="bi bi-gear"></i></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">Mejora continua / optimización / digitalización de procesos</p>
-                            <p class="card-text">La transformación no es “un evento”, sino un camino constante. En este bloque me enfoco en revisar procesos existentes, detectar cuellos de botella o actividades con bajo valor agregado, y buscar formas de automatización, digitalización o rediseño. Utilizo metodologías como mejora continua (Kaizen, PDCA), frameworks de análisis de procesos, y métricas clave para medir antes, durante y después los cambios. De esta forma, el sistema evoluciona, se vuelve más eficiente, más ágil y genera valor sostenible.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
-                    <div class="card">
-                        <div class="circle-container">
-                            <div class="circle"><i class="bi bi-lightbulb"></i></div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">Innovación y estrategia basada en datos</p>
-                            <p class="card-text">La innovación no surge del azar, sino de la capacidad de aprender de los datos y anticiparse a las necesidades. En este ámbito, promuevo una cultura organizacional orientada a la evidencia, donde los datos se convierten en una herramienta estratégica para diseñar, probar y escalar nuevas soluciones. A través de la gobernanza de datos, la experimentación y el uso de tecnologías emergentes, impulso procesos de mejora continua y decisiones sostenibles que fortalecen la transformación digital a largo plazo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="projects section-light" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-top"><p class="eyebrow">01 / TRABAJO SELECCIONADO</p><span class="section-index">DEL ANÁLISIS A LA APLICACIÓN</span></div>
+        <div class="section-heading"><h2 id="projects-title">Problemas reales.<br><span class="muted">Soluciones con datos.</span></h2><p>Una selección de trabajos en visualización, gestión pública y modelación. Cada proyecto, una forma de convertir información en algo útil.</p></div>
+        <div class="project-filters" role="group" aria-label="Filtrar proyectos" hidden><button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Todos <span>06</span></button><button type="button" class="filter" data-filter="analytics" aria-pressed="false">Análisis y visualización</button><button type="button" class="filter" data-filter="model" aria-pressed="false">Modelación</button><button type="button" class="filter" data-filter="management" aria-pressed="false">Gestión de datos</button></div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+        <div class="project-grid">
+          <article class="project-card featured" data-category="analytics">
+            <a class="project-image image-energy" href="https://app.powerbi.com/view?r=eyJrIjoiOWQxNGZmODktNzVkOS00NDkwLTgyMzYtZDBjYThhZjE2MGQxIiwidCI6IjUzMGM5NWRiLTMzMTEtNDI3Mi1hYzcxLTgyZmJhNjAwZTBiMSIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Abrir dashboard de consumo eléctrico"><span class="image-label">CASO DESTACADO</span><img src="assets/images/projects/ConsumoElectrico.webp" width="800" height="500" alt="Vista del dashboard de consumo eléctrico de San Fernando" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>01 / INTELIGENCIA DE NEGOCIOS</span><span>2023 — 2024</span></div><h3>Una ciudad, vista desde su energía.</h3><p>Análisis del consumo eléctrico de San Fernando entre agosto de 2023 y julio de 2024, presentado en un dashboard interactivo.</p><div class="project-bottom"><div class="tags"><span>Power BI</span><span>Visualización</span></div><a class="project-link" href="https://datos.munisanfernando.cl/services/consumo-electrico-san-fernando-1" target="_blank" rel="noopener noreferrer">Ver publicación ↗</a></div>
+          </article>
+          <article class="project-card featured" data-category="model">
+            <a class="project-image image-traffic" href="https://github.com/KazterING/Uxsim2" target="_blank" rel="noopener noreferrer" aria-label="Ver código del modelo de tráfico"><span class="image-label">MODELACIÓN URBANA</span><img src="assets/images/projects/san_fernando_con_feria_FINAL.gif" width="800" height="500" alt="Simulación de la red vial de San Fernando con UXSIM" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>02 / SIMULACIÓN</span><span>SAN FERNANDO</span></div><h3>Entender cómo se mueve la ciudad.</h3><p>Modelo macroscópico de predicción de tráfico para San Fernando, desarrollado con UXSIM para explorar el comportamiento de su red vial.</p><div class="project-bottom"><div class="tags"><span>Python</span><span>UXSIM</span></div><a class="project-link" href="https://github.com/KazterING/Uxsim2" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
+          </article>
+          <article class="project-card" data-category="analytics">
+            <a class="project-image image-health" href="https://app.powerbi.com/view?r=eyJrIjoiNjdmY2Y2NWItMmQ2Ny00MzIyLWE3MzYtNTI3Njc1YWIzZTg1IiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Abrir dashboard de atención del CESFAM Oriente"><img src="assets/images/projects/vendimia_analisis.png" width="800" height="500" alt="Panel de análisis de atención del CESFAM Oriente" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>03 / SALUD PÚBLICA</span><span>2025</span></div><h3>Datos para mirar la atención en salud.</h3><p>Análisis de tiempos de espera y nivel de atención del CESFAM Oriente de San Fernando.</p><div class="tags"><span>Power BI</span><span>Indicadores de atención</span></div>
+          </article>
+          <article class="project-card" data-category="management">
+            <a class="project-image image-inventory" href="https://docs.google.com/spreadsheets/d/1Og-4qWd53V5914nQeGPPM5jy5fV3RoA4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Ver inventario de datos abiertos"><img src="assets/images/projects/inventario.png" width="800" height="500" alt="Inventario municipal de datos abiertos de San Fernando" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>04 / GESTIÓN PÚBLICA</span><span>DATOS ABIERTOS</span></div><h3>Organizar la información para hacerla útil.</h3><p>Apoyo en la gestión y ejecución de un inventario de datos de la Municipalidad de San Fernando.</p><div class="tags"><span>Inventario de datos</span><span>Gestión</span></div>
+          </article>
+          <article class="project-card" data-category="analytics">
+            <a class="project-image image-festival" href="https://drive.google.com/file/d/1pgJJbrgdU-rw04VHrT3pKAWLd99D3V0V/view" target="_blank" rel="noopener noreferrer" aria-label="Ver informe del Festival de la Vendimia"><img src="assets/images/projects/vendimia.png" width="800" height="500" alt="Informe de análisis del Festival de la Vendimia" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>05 / ESTADÍSTICA APLICADA</span><span>2025</span></div><h3>Una mirada al impacto de la Vendimia.</h3><p>Apoyo al análisis del festival mediante estadística inferencial para aportar información a la toma de decisiones.</p><div class="tags"><span>Estadística inferencial</span><span>Análisis de impacto</span></div>
+          </article>
+          <article class="project-card" data-category="analytics">
+            <a class="project-image image-market" href="https://app.powerbi.com/view?r=eyJrIjoiYmM3NDNkNGItMzAxYS00OWY0LThjNDMtZmJiN2Q5OWUyZjRmIiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Abrir análisis de la feria libre"><img src="assets/images/projects/Captura%20de%20pantalla%202026-05-24%20113112.png" width="800" height="500" alt="Dashboard de percepción de asistentes a la feria libre" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+            <div class="project-meta"><span>06 / ANÁLISIS DE CAMPO</span><span>SAN FERNANDO</span></div><h3>Escuchar a quienes hacen la feria.</h3><p>Análisis de la percepción de asistentes a la feria libre de San Fernando, en la Región de O’Higgins.</p><div class="tags"><span>Power BI</span><span>Análisis de percepción</span></div>
+          </article>
         </div>
+        <div class="projects-footer"><p>El proceso también cuenta. Explora mis repositorios.</p><a class="text-link dark-link" href="https://github.com/KazterING/" target="_blank" rel="noopener noreferrer">Más en GitHub ↗</a></div>
+      </div>
     </section>
 
-
-    <!-- About Me -->
-    <section id="about">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">¿Quién soy yo?</span></h6>
-            <h2 class="section-heading text-center">Sobre mi</h2>
-            
-            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="200">
-                <div class="col-lg-5 about-portrait" style="overflow:hidden; position:relative;">
-                    <div id="slideshow-container" style="position:relative; width:100%; height:100%;">
-                        <img id="about-slideshow" src="photos/bella.jpg" class="img-fluid pic"
-                            alt="About Me Portrait"
-                            style="position:absolute; left:0; top:0; width:100%; height:100%; object-fit:cover; object-position:center; transition: transform 2s;">
-                        <img id="about-slideshow-next" src="" class="img-fluid pic"
-                            alt=""
-                            style="position:absolute; left:100%; top:0; width:100%; height:100%; object-fit:cover; object-position:center; transition: transform 2s;">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <p class="bio">
-                        ¡Hola! Soy egresado de Ingeniería Civil Industrial en la Universidad de O’Higgins, en Rancagua. Desde que comencé mi carrera, descubrí que lo que más me motiva es entender cómo los datos, los procesos y las personas se conectan para mejorar el funcionamiento de una organización.
-                        </br></br>
-                        Además de mi interés por la analítica y la optimización, tengo un lado muy activo: asisto regularmente al gimnasio, y cuando era más joven practiqué karate, tenis, básquetbol y natación. El deporte me enseñó disciplina, constancia y, sobre todo, a no rendirme ante los desafíos.
-                        </br></br>
-                        Y claro, no puedo dejar fuera a Bella, mi Yorkshire Terrier: un pequeño ser lleno de amor, energía y croquetas, que se encarga de recordarme que incluso los días más ocupados necesitan una pausa para jugar.
-                        </br></br>
-                        Me gusta pensar que mi camino combina curiosidad, aprendizaje continuo y una buena dosis de humor. Porque, al final, trabajar con datos o mejorar procesos también puede ser una forma divertida de hacer que las cosas funcionen mejor.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid"><div><p class="eyebrow">02 / DETRÁS DE LOS DATOS</p><h2 id="about-title">Curiosidad para<br>entender.<br><em>Criterio para<br>transformar.</em></h2><div class="about-signature">Tomás Saldaña<span>INGENIERÍA + TECNOLOGÍA</span></div></div><div class="about-story"><p class="large-copy">Me interesa lo que ocurre cuando los datos, los procesos y las personas se conectan.</p><p>Mi formación en Ingeniería Civil Industrial en la Universidad de O’Higgins me llevó a encontrar en la analítica y la optimización una manera concreta de resolver problemas.</p><p>Trabajo con herramientas de análisis, visualización y desarrollo para entender la información, comunicarla con claridad y apoyar decisiones. Mi experiencia incluye proyectos aplicados a la gestión municipal en San Fernando.</p><p>Fuera de la pantalla, el deporte me ha enseñado disciplina y constancia. Y Bella, mi Yorkshire Terrier, me recuerda que siempre hay tiempo para una pausa.</p><div class="about-facts"><div><span>FORMACIÓN</span><strong>Universidad de O’Higgins</strong></div><div><span>ENFOQUE</span><strong>Análisis de datos y procesos</strong></div></div></div></div>
     </section>
 
-    <script>
-    const images = [
-        'photos/foto5.jpg',
-        'photos/foto1.jpg',
-        'photos/foto2.jpg',
-        'photos/foto3.jpg',
-        'photos/foto4.jpg',
-        'photos/foto6.jpg',
-        'photos/foto7.jpg',
-        'photos/foto8.jpg',
-        'photos/foto9.jpg'
-    ];
-    let current = 0;
-    const imgCurrent = document.getElementById('about-slideshow');
-    const imgNext = document.getElementById('about-slideshow-next');
-
-    // Función para inicializar el slideshow
-    function initializeSlideshow() {
-        // Asegurar que la imagen actual esté visible desde el inicio
-        imgCurrent.src = images[current];
-        imgCurrent.style.transform = "translateX(0)";
-        imgCurrent.style.opacity = "1";
-        
-        // Preparar la imagen siguiente (oculta)
-        imgNext.src = images[(current + 1) % images.length];
-        imgNext.style.transform = "translateX(100%)";
-        imgNext.style.opacity = "0";
-    }
-
-    function slideToNextImage() {
-        imgNext.src = images[(current + 1) % images.length];
-        imgCurrent.style.transform = "translateX(0)";
-        imgNext.style.transform = "translateX(100%)";
-        imgNext.style.opacity = 1;
-        void imgNext.offsetWidth;
-        imgCurrent.style.transform = "translateX(-100%)";
-        imgNext.style.transform = "translateX(0)";
-        setTimeout(() => {
-            current = (current + 1) % images.length;
-            imgCurrent.src = images[current];
-            imgCurrent.style.transform = "translateX(0)";
-            imgNext.style.transform = "translateX(100%)";
-            imgNext.style.opacity = 0;
-        }, 2000); // 2 segundos de transición
-    }
-
-    // Inicializar cuando el DOM esté listo
-    document.addEventListener('DOMContentLoaded', function() {
-        initializeSlideshow();
-        setInterval(slideToNextImage, 8000); // Cambia cada 8 segundos
-    });
-    </script>
-
-    <!-- Skills -->
-    <section id="skills">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">¿Qué sé yo?</span></h6>
-            <h2 class="section-heading text-center">Habilidades</h2>
-            <p class="text-center muted-text mt-3 mb-4">Algunas de las herramientas, softwares y frameworks en los que me especializo:</p>
-            
-            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/RStudio.svg" alt="RStudio">
-                        <p class="skill-name">RStudio</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/power-bi-icon.svg" alt="Powerbi">
-                        <p class="skill-name">Powerbi</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/excel.png" alt="Excel">
-                        <p class="skill-name">Excel</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/VS.svg" alt="VScode">
-                        <p class="skill-name">VScode</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/React.svg" alt="React">
-                        <p class="skill-name">React</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/Google Cloud.svg" alt="Google Cloud">
-                        <p class="skill-name">Google Cloud</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/Docker.svg" alt="Docker">
-                        <p class="skill-name">Docker</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/TypeScript.svg" alt="TypeScript">
-                        <p class="skill-name">TypeScript</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/HTML.svg" alt="HTML">
-                        <p class="skill-name">HTML</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/PostgresSQL.svg" alt="PostgresSQL">
-                        <p class="skill-name">PostgresSQL</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/JS.svg" alt="JavaScript">
-                        <p class="skill-name">JS</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/NodeJS.svg" alt="NodeJS">
-                        <p class="skill-name">NodeJS</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <img class="skill-image" src="/assets/images/skills/Python.svg" alt="Python">
-                        <p class="skill-name">Python</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="specialties section-light" id="skills" aria-labelledby="skills-title">
+      <div class="container"><div class="section-top"><p class="eyebrow">03 / CÓMO PUEDO APORTAR</p><span class="section-index">PENSAMIENTO ANALÍTICO. EJECUCIÓN PRÁCTICA.</span></div><div class="section-heading"><h2 id="skills-title">Del problema<br><span class="muted">a la siguiente acción.</span></h2><p>Combino una mirada de ingeniería con herramientas digitales para abordar los desafíos desde distintos ángulos.</p></div>
+        <div class="specialty-list"><article><span class="specialty-number">01</span><h3>Análisis y visualización</h3><div><p>Explorar, limpiar y presentar información para reconocer patrones y comunicar hallazgos que apoyen decisiones.</p><div class="tags"><span>Python</span><span>RStudio</span><span>Power BI</span><span>Excel</span></div></div><span class="specialty-symbol" aria-hidden="true">↗</span></article><article><span class="specialty-number">02</span><h3>Procesos y optimización</h3><div><p>Comprender cómo funciona una operación, identificar cuellos de botella y explorar oportunidades de automatización y mejora continua.</p><div class="tags"><span>Mejora continua</span><span>Modelación</span><span>Automatización</span></div></div><span class="specialty-symbol" aria-hidden="true">↗</span></article><article><span class="specialty-number">03</span><h3>Tecnología aplicada</h3><div><p>Conectar el análisis con soluciones digitales, combinando programación y herramientas de desarrollo.</p><div class="tags"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Docker</span><span>Google Cloud</span></div></div><span class="specialty-symbol" aria-hidden="true">↗</span></article></div>
+        <div class="certificates" id="certificates"><div class="certificate-heading"><h3>Seguir aprendiendo<br>es parte del trabajo.</h3><p>Formación complementaria</p></div><div class="certificate-list"><a href="https://drive.google.com/file/d/1UEyzBjpeKtNT2w3VTHIPHNPZG3x4GC9v/view" target="_blank" rel="noopener noreferrer"><div><span>TALENTO DIGITAL</span><h4>Python para Ciencia de Datos</h4></div><span aria-hidden="true">↗</span></a><a href="https://drive.google.com/file/d/1JDjN7yUMKs7Qc3JoigoAJq8_YfIul8Bx/view" target="_blank" rel="noopener noreferrer"><div><span>BLOOMBERG PHILANTHROPIES</span><h4>Programa de Especialización en IA</h4></div><span aria-hidden="true">↗</span></a><a href="https://drive.google.com/file/d/1sR_hE_qXiClz3ju9uCbns87hs9u4AKoM/view" target="_blank" rel="noopener noreferrer"><div><span>COURSERA</span><h4>Gestión de Proyectos</h4></div><span aria-hidden="true">↗</span></a></div></div>
+      </div>
     </section>
 
+    <section class="references" aria-labelledby="references-title"><div class="container"><p class="eyebrow" id="references-title">EN PALABRAS DE QUIENES HAN TRABAJADO CONMIGO</p><div class="quote-grid"><figure><span class="quote-mark" aria-hidden="true">“</span><blockquote>El joven Tom es una persona comprometida y con concepto de equipo; es un joven que da lo mejor de sí en cumplir cada tarea asignada.</blockquote><figcaption><span class="avatar">RA</span><div><strong>Reinaldo Ahumada</strong><span>Ingeniero Civil Industrial · Exjefe</span></div></figcaption></figure><figure><span class="quote-mark" aria-hidden="true">“</span><blockquote>El chico Tom es un joven con gran disposición, enfocado en trabajar por objetivos.</blockquote><figcaption><span class="avatar">CR</span><div><strong>Carlos Riveros</strong><span>Doctor en Matemáticas · Exjefe</span></div></figcaption></figure><figure><span class="quote-mark" aria-hidden="true">“</span><blockquote>Un profesional que sabe afrontar desafíos y ofrecer soluciones innovadoras.</blockquote><figcaption><span class="avatar">CR</span><div><strong>Christian Ramos</strong><span>Desarrollador Full Stack · Amigo</span></div></figcaption></figure></div></div></section>
 
-
-    <!-- Timelines 
-    <section id="timelines">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What am Doing?</span></h6>
-            <h2 class="section-heading text-center">Timelines</h2>
-            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 skills-container">
-                <div class="col">
-                </div>
-            </div>
-        </div>
-    </section> -->
-            
-
-    <!-- Projects -->
-   <section id="projects">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Algunas cosas que he hecho</span></h6>
-            <h2 class="section-heading text-center">Proyectos</h2>
-            <div class="row justify-content-center mt-4 gy-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="PfpFinder Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOWQxNGZmODktNzVkOS00NDkwLTgyMzYtZDBjYThhZjE2MGQxIiwidCI6IjUzMGM5NWRiLTMzMTEtNDI3Mi1hYzcxLTgyZmJhNjAwZTBiMSIsImMiOjR9" class="card-title title" target="_blank">Analisis de Consumo electrico</a>
-                                    <p class="stacks m-0">PowerBi</p>
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://datos.munisanfernando.cl/services/consumo-electrico-san-fernando-1" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="description-container">
-                            <p class="description">Análisis del consumo eléctrico en la ciudad de San Fernando, ago. 2023 - jul. 2024.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://app.powerbi.com/view?r=eyJrIjoiOWQxNGZmODktNzVkOS00NDkwLTgyMzYtZDBjYThhZjE2MGQxIiwidCI6IjUzMGM5NWRiLTMzMTEtNDI3Mi1hYzcxLTgyZmJhNjAwZTBiMSIsImMiOjR9" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/ConsumoElectrico.webp" class="card-img-top banner" alt="PfpFinder Banner">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="BikeKart Template Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNjdmY2Y2NWItMmQ2Ny00MzIyLWE3MzYtNTI3Njc1YWIzZTg1IiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" class="card-title title" target="_blank">Análisis de nivel de atención, Cesfam Oriente - San Fernando</a>
-                                    <p class="stacks m-0">PowerBi</p>
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNjdmY2Y2NWItMmQ2Ny00MzIyLWE3MzYtNTI3Njc1YWIzZTg1IiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Análisis de metricas asociadas a tiempos de espera y nivel de atención del Cesfam Oriente de San Fernando 2025.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNjdmY2Y2NWItMmQ2Ny00MzIyLWE3MzYtNTI3Njc1YWIzZTg1IiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9
-                                " class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/vendimia_analisis.png" class="card-img-top banner" alt="BikeKart Banner">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="BikeKart Template Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://docs.google.com/spreadsheets/d/1Og-4qWd53V5914nQeGPPM5jy5fV3RoA4/edit?usp=sharing&ouid=101428799160000526386&rtpof=true&sd=true" class="card-title title" target="_blank">Inventario de datos abiertos - San Fernando.</a>
-            
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://docs.google.com/spreadsheets/d/1Og-4qWd53V5914nQeGPPM5jy5fV3RoA4/edit?usp=sharing&ouid=101428799160000526386&rtpof=true&sd=true" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Apoyo en la gestión y ejecución de un inventario de datos en la I. Municipalidad de San fernando.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://docs.google.com/spreadsheets/d/1Og-4qWd53V5914nQeGPPM5jy5fV3RoA4/edit?usp=sharing&ouid=101428799160000526386&rtpof=true&sd=true" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/inventario.png" class="card-img-top banner" alt="BikeKart Banner">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="BikeKart Template Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://datos.munisanfernando.cl/documents/inventario-de-datos-abiertos/" class="card-title title" target="_blank">Informe Estadistico- festival de la Vendimia 2025 - San Fernando.</a>
-            
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://drive.google.com/file/d/1pgJJbrgdU-rw04VHrT3pKAWLd99D3V0V/view?usp=sharing/" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Apoyo en el análisis del informe de impacto del Festival de la Vendimia en San Fernando 2025, aplicando diferentes métodos de estadística inferencial para la obtención de información y la toma de decisiones.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://drive.google.com/file/d/1pgJJbrgdU-rw04VHrT3pKAWLd99D3V0V/view?usp=sharing/" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/vendimia.png" class="card-img-top banner" alt="BikeKart Banner">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="BikeKart Template Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYmM3NDNkNGItMzAxYS00OWY0LThjNDMtZmJiN2Q5OWUyZjRmIiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" class="card-title title" target="_blank">Analisis de campo, Feria libre San Fernando región de O'Higgins</a>
-            
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYmM3NDNkNGItMzAxYS00OWY0LThjNDMtZmJiN2Q5OWUyZjRmIiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Analisis de campo efectuado en la Feria libre San Fernando, analisis de percepción del asistente a la feria</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYmM3NDNkNGItMzAxYS00OWY0LThjNDMtZmJiN2Q5OWUyZjRmIiwidCI6ImZiNGY0MjI1LTBkM2QtNDgwYi05ZDIxLTEyNjY0YWU4NDBkMSIsImMiOjR9" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/Captura de pantalla 2026-05-24 113112.png" class="card-img-top banner" alt="BikeKart Banner">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-2">
-                                    <img src="/assets/images/projects/LOGO_MUNI_DA_CONFIANZA_1_page-0001.jpg" class="img-fluid icon" alt="BikeKart Template Logo">
-                                </div>
-                                <div class="col-7 p-0">
-                                    <a href="https://github.com/KazterING/Uxsim2" class="card-title title" target="_blank">Algoritmo de Predicción de trafico - San fernando</a>
-            
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://github.com/KazterING/Uxsim2" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Visitar <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Modelo de predicción de trafico macroscopico enfocado en la ciudad de san fernando, desarrollado con UXSIM</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://github.com/KazterING/Uxsim2" class="btn" target="_blank"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                            </div>
-                            <img src="/assets/images/projects/san_fernando_con_feria_FINAL.gif" class="card-img-top banner" alt="BikeKart Banner">
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section> 
-
-    <!-- Certificados -->
-    <section id="certificates">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Formacion y acreditaciones</span></h6>
-            <h2 class="section-heading text-center">Certificados</h2>
-            <div class="row justify-content-center mt-4 gy-4" data-aos="fade-up" data-aos-delay="200">
-    
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-9 p-0">
-                                    <a href="https://drive.google.com/file/d/1UEyzBjpeKtNT2w3VTHIPHNPZG3x4GC9v/view?usp=sharing" class="card-title title" target="_blank" title="Ver certificado en PDF">Python para Ciencia de Datos</a>
-                                    <p class="stacks m-0">Talento Digital</p>
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://drive.google.com/file/d/1UEyzBjpeKtNT2w3VTHIPHNPZG3x4GC9v/view?usp=sharing" class="btn btn-sm primary-bg-btn rounded-5" target="_blank" title="Ver certificado en PDF">Ver <i class="bi bi-award-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Formacion en analisis exploratorio, limpieza de datos y automatizacion de procesos con Python aplicado a casos reales.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://drive.google.com/file/d/1UEyzBjpeKtNT2w3VTHIPHNPZG3x4GC9v/view?usp=sharing" class="btn" target="_blank" title="Ver certificado en PDF"></a>
-                            </div>
-                            <object data="https://drive.google.com/file/d/1UEyzBjpeKtNT2w3VTHIPHNPZG3x4GC9v/preview" type="application/pdf" class="card-img-top banner certificate-pdf">
-                                <img src="/assets/images/projects/vendimia_analisis.png" class="card-img-top banner" alt="Certificado Python">
-                            </object>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-9 p-0">
-                                    <a href="https://drive.google.com/file/d/1JDjN7yUMKs7Qc3JoigoAJq8_YfIul8Bx/view?usp=sharing" class="card-title title" target="_blank" title="Ver certificado en PDF">Programa de Especialización en IA</a>
-                                    <p class="stacks m-0">Bloomberg Philanthropies</p>
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://drive.google.com/file/d/1JDjN7yUMKs7Qc3JoigoAJq8_YfIul8Bx/view?usp=sharing" class="btn btn-sm primary-bg-btn rounded-5" target="_blank" title="Ver certificado en PDF">Ver <i class="bi bi-award-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Certificacion otorgada por el programa de especialización en IA de Bloomberg Philanthropies - Desarrollo de algoritmo con implementación de IA.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://drive.google.com/file/d/1JDjN7yUMKs7Qc3JoigoAJq8_YfIul8Bx/view?usp=sharing" class="btn" target="_blank" title="Ver certificado en PDF"></a>
-                            </div>
-                            <object data="https://drive.google.com/file/d/1JDjN7yUMKs7Qc3JoigoAJq8_YfIul8Bx/preview" type="application/pdf" class="card-img-top banner certificate-pdf">
-                                <img src="/assets/images/projects/inventario.png" class="card-img-top banner" alt="Certificado SQL">
-                            </object>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="col-9 p-0">
-                                    <a href="https://drive.google.com/file/d/1sR_hE_qXiClz3ju9uCbns87hs9u4AKoM/view?usp=sharing" class="card-title title" target="_blank" title="Ver certificado en PDF">Gestion de Proyectos - Coursera</a>
-                                    <p class="stacks m-0">Coursera</p>
-                                </div>
-                                <div class="col-3 align-middle">
-                                    <a href="https://drive.google.com/file/d/1sR_hE_qXiClz3ju9uCbns87hs9u4AKoM/view?usp=sharing" class="btn btn-sm primary-bg-btn rounded-5" target="_blank" title="Ver certificado en PDF">Ver <i class="bi bi-award-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description-container">
-                            <p class="description">Curso de Gestión de proyectos, generación de metodologias ágiles y tradicionales.</p>
-                        </div>
-                        <div class="banner-container">
-                            <div class="overlay">
-                                <a href="https://drive.google.com/file/d/1sR_hE_qXiClz3ju9uCbns87hs9u4AKoM/view?usp=sharing" class="btn" target="_blank" title="Ver certificado en PDF"></a>
-                            </div>
-                            <object data="https://drive.google.com/file/d/1sR_hE_qXiClz3ju9uCbns87hs9u4AKoM/preview" type="application/pdf" class="card-img-top banner certificate-pdf">
-                                <img src="/assets/images/projects/vendimia.png" class="card-img-top banner" alt="Certificado Excel">
-                            </object>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">¿Que piensan de mi?</span></h6>
-            <h2 class="section-heading text-center">Testimonios</h2>
-            <p class="text-center muted-text mt-3 mb-4">Qué dicen mis amigos y encargados sobre mí.</p>
-            <div class="row mt-4 gy-4" data-aos="fade-down" data-aos-delay="200">
-                <div class="col-md-12">
-                    <div id="testimonial-slider" class="owl-carousel">
-                        <div class="testimonial">
-                            <p class="description">
-                                Un profesional que sabe afrontar desafios y ofrecer soluciones innovadoras.
-                            </p>
-                            <div class="pic">
-                                <img src="/assets/images/bellaslogoNO.png" alt="Moinudeen Pic">
-                            </div>
-                            <div class="detail">
-                                <h4 class="name">Christian Ramos</h4>
-                                <small class="role" >Desarollador Full Satck/Amigo</small>
-                            </div>
-                        </div>
-         
-                        <div class="testimonial">
-                            <p class="description">
-                                El chico Tom es un joven con gran disposición, enfocado en trabajar por objetivos.
-                            </p>
-                            <div class="pic">
-                                <img src="/assets/images/bellaslogoNO.png" alt="Nadeem Pic">
-                            </div>
-                            <div class="detail">
-                                <h4 class="name">Carlos Riveros</h4>
-                                <small class="role">Doctor en Matematicas/Ex-Jefe</small>
-                            </div>
-                        </div>
-
-                       <div class="testimonial">
-                            <p class="description">
-                                El joven Tom es una persona comprometida y con concepto de equipo; es un joven que da lo mejor de sí en cumplir cada tarea asignada.
-                            </p>
-                            <div class="pic">
-                                <img src="/assets/images/bellaslogoNO.png" alt="Jwala Pratap Pic" class="">
-                            </div>
-                            <div class="detail">
-                                <h4 class="name">Reinaldo Ahumada</h4>
-                                <small class="role">Ingeniero Civil Industrial/Ex-Jefe/Amigo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blogs -->
-    <!-- <section id="blogs">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Do I Write?</span></h6>
-            <h2 class="section-heading text-center">My Blogs</h2>
-            <p class="text-center muted-text mt-3 mb-4">From tech tips to gaming guides, here are some written pieces that you can check out if you're interested.</p>
-            <div class="row justify-content-center gy-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card article-card">
-                        <div class="banner-container position-relative">
-                            <div class="position-absolute top-0 end-0">
-                                <span class="badge">Gaming</span>
-                            </div>
-                            <img src="https://gamesroid.com/wp-content/uploads/2023/10/How-to-Update-Township.webp" class="card-img-top banner" alt="How to Update Township Game">
-                        </div>                        
-                        <div class="card-body">
-                            <a href="https://gamesroid.com/how-to-update-township-game/"></a><h6 class="card-title">How to Update Township Game – Guide for Every Platform!</h6></a>
-                            <p class="card-text description">Keep your Township updated and experience all the latest features.</p>
-                            <a href="https://gamesroid.com/how-to-update-township-game/" class="text-decoration-none" target="_blank"><span class="read-more">Read More <i class="bi bi-arrow-up-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card article-card">
-                        <div class="banner-container position-relative">
-                            <div class="position-absolute top-0 end-0">
-                                <span class="badge">Gaming</span>
-                            </div>
-                            <img src="https://gamesroid.com/wp-content/uploads/2023/09/Popular-Mobile-Games.webp" class="card-img-top banner" alt="Most Popular Mobile Games in India">
-                        </div>                        
-                        <div class="card-body">
-                            <a href="https://gamesroid.com/most-popular-mobile-games-in-india/"></a><h6 class="card-title">Most Popular Mobile Games in India- Android & iOS </h6></a>
-                            <p class="card-text description">Find out the top trendiest and most popular mobile games in India!</p>
-                            <a href="https://gamesroid.com/most-popular-mobile-games-in-india/" class="text-decoration-none" target="_blank"><span class="read-more">Read More <i class="bi bi-arrow-up-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card article-card">
-                        <div class="banner-container position-relative">
-                            <div class="position-absolute top-0 end-0">
-                                <span class="badge">Gaming</span>
-                            </div>
-                            <img src="https://gamesroid.com/wp-content/uploads/2024/01/Discord-Banners.webp" class="card-img-top banner" alt="Best Discord Banners and GIFs">
-                        </div>                        
-                        <div class="card-body">
-                            <a href="https://gamesroid.com/best-discord-banners/"></a><h6 class="card-title">100+ Best Discord Banners and GIFs</h6></a>
-                            <p class="card-text description">From anime, to aesthetics, cuteness to coolness, static to animated there's a for you.</p>
-                            <a href="https://gamesroid.com/best-discord-banners/" class="text-decoration-none" target="_blank"><span class="read-more">Read More <i class="bi bi-arrow-up-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">¿Que sigue?</span></h6>
-            <h2 class="section-heading text-center">¡Pongamosnos en contacto!</h2>
-            
-            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
-                <div class="col-lg-8">
-                    <div class="contact-form">
-                        <form id="contact-form" onsubmit="sendMail(event)">
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" name="subject"  placeholder="Asunto *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea style="resize: none;" class="form-control" id="message" name="message" rows="5" placeholder="Mensaje *" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn primary-bg-btn mt-2">Enviar Mensaje <i class="bi bi-arrow-up-right"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 text-center mb-2 mb-md-0">
-                    <span>
-                        <i class="bi bi-envelope"></i> 
-                        <a href="mailto:tomas.ingenieriaindustrial@gmail.com" class="text-decoration-none text-light">tomas.ingenieriaindustrial@gmail.com</a>
-                    </span>
-                    <span class="mx-3">|</span>
-                    <span>
-                        <i class="bi bi-whatsapp"></i>
-                        <a href="https://wa.me/56979145478" target="_blank" class="text-decoration-none text-light">+56 9 7914 5478</a>
-                    </span>
-                </div>
-                <div class="col-md-6 text-center">
-                    <p class="mb-0 copyright-text">
-                        hecho con <span>Bootstrap, HTML, CSS, JS</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <button class="btn" id="backToTopButton" onclick="scrollToTop()" style="display: none;">
-        <span aria-label="Back to top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-              </svg>
-        </span>
-    </button>
-
-    <!-- JavaScript -->
-    <script src="assets/js/aos.js" defer></script>
-    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
-    <script src="assets/js/owl.carousel.min.js" defer></script>
-    <script src="assets/js/bootstrap.min.js" defer></script>
-    <script src="assets/js/script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-
-    <script>
-    function sendMail(event) {
-        event.preventDefault();
-        const form = document.getElementById('contact-form');
-        fetch('https://backend-portafolio-six.vercel.app/send', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                name: form.name.value,
-                email: form.email.value,
-                subject: form.subject.value,
-                message: form.message.value
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            Swal.fire({
-                icon: 'success',
-                title: '¡Mensaje enviado!',
-                text: data.message,
-                confirmButtonColor: '#6f42c1', // Puedes personalizar el color
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                }
-            });
-            form.reset();
-        })
-        .catch(() => alert('Error al enviar el mensaje.'));
-    }
-    </script>
-
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow"><span class="status-dot"></span> EL SIGUIENTE PASO EMPIEZA CON UNA CONVERSACIÓN</p><h2 id="contact-title">¿Un desafío<br>en tu equipo?<br><em>Conversemos.</em></h2><p>Si buscas un perfil que conecte ingeniería, datos y tecnología, me gustaría conocer tu proyecto u oportunidad laboral.</p><a class="contact-email" href="mailto:tomas.ingenieriaindustrial@gmail.com">tomas.ingenieriaindustrial@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/tomas-saldaña/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://wa.me/56979145478" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><button type="button" id="copy-email" hidden>Copiar correo</button></div><p class="copy-status" id="copy-status" role="status"></p></div><form id="contact-form" class="contact-form"><h3>Cuéntame en qué estás pensando.</h3><div class="form-row"><div><label for="name">Tu nombre</label><input id="name" name="name" autocomplete="name" placeholder="Nombre y apellido" required maxlength="120"></div><div><label for="email">Tu correo</label><input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@empresa.com" required maxlength="254"></div></div><label for="subject">Asunto</label><input id="subject" name="subject" placeholder="Oportunidad laboral, proyecto…" required maxlength="200"><label for="message">Mensaje</label><textarea id="message" name="message" rows="4" placeholder="Me gustaría conversar sobre…" required maxlength="5000"></textarea><button type="submit" class="button button-lime" id="send-button" disabled>Enviar mensaje <span aria-hidden="true">↗</span></button><p id="form-status" class="form-status" role="status" aria-live="polite"></p><noscript><p>Para contactarme, escribe directamente a mi correo o por LinkedIn.</p></noscript></form></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="#inicio" aria-label="Volver al inicio">ts<span>©</span></a><p>Tomás Saldaña · Ingeniería, datos y decisiones.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
 </body>
 </html>
